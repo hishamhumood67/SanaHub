@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0e1a2b;
+}
+
+/* Code, serial output and pin names stay left-to-right inside Arabic pages */
+pre,
+code,
+kbd,
+samp {
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
